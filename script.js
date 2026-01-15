@@ -7,7 +7,7 @@ const fileInput = document.querySelector('#file-input');
 const fileUploadWrapper = document.querySelector('.file-upload-wrapper');
 const themeToggle = document.querySelector('#light_mode');
 
-const API_KEY = 'AIzaSyBB6mRsvMT8qEWmyh6ONTTDFtYHbK_e6yo'
+const API_KEY = 'AIzaSyD_TPlVuoXhFRMGYHlDQjbOGBFpb-zHWXc'
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`
 let typingInterval, contoller;
 const chatHistory = [];
@@ -201,5 +201,6 @@ themeToggle.addEventListener('click', () => {
 
 
 promptForm.addEventListener('submit', handleFormSubmit);
+
 
 promptForm.querySelector('#add-file-btn').addEventListener('click', () => fileInput.click())
